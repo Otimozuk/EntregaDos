@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="../style.sass/style.scss">
 </head>
 <header>
     <h1>NFT</h1>
@@ -82,33 +83,41 @@
         <label for="novedades">Deseo recibir novedades</label>
         <input id="novedades" type="checkbox">
     </fieldset>
-
-
-    <div>
-        <h4>Síguenos</h4>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://es-la.facebook.com/" target="_blank">
-                        <img width="50" src="../img/descarga.png" alt="Logo de Facebook">
-                    </a>
-                </li>
-                <li><a href="https://twitter.com/?lang=es" target="_blank"><img width="50" src="../img/Preview-image.png"
-                            alt="Logo de Twitter"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img width="50" src="../img/Instagram_logo_2016.svg.webp"
-                            alt="Logo de instagram"></a></li>
-            </ul>
-        </nav>
-    </div>
+>
 
 
 
 
 
 
-    <footer>
-        <p>Copyright © 2018 - 2023 Cripto.com. Reservados todos los derechos.</p>
-
+    <footer class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline social-media-links">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="../img/descarga.png" width="50" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="../img/Preview-image.png" width="50" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="../img/Instagram_logo_2016.svg.webp" width="50" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 

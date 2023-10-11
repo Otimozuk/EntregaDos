@@ -1,7 +1,7 @@
 $primary-color: #3498db;
 $secondary-color: #e74c3c;
 $font-family: Arial, sans-serif;
-
+$use-primary-bg: true;
 
 body {
   font-family: $font-family;
@@ -18,8 +18,12 @@ body {
 
 
 header {
-  background-color: $primary-color;
-  background: linear-gradient;
+  @if $use-primary-bg {
+    background-color: $primary-color;
+  } @else {
+    background-color: $secondary-color;
+  }
+  background: linear-gradient(to bottom, #FF5733, #001aff);
   color: white;
   padding: 10px;
 
@@ -36,8 +40,12 @@ header {
     }
   }
 }
+.navbar {
+  background: linear-gradient(to bottom, #3498db, #e74c3c); /* Cambia los colores según tu preferencia */
+}
 
 nav {
+  
   ul.navbar-nav {
     list-style-type: none;
     padding: 0;
@@ -132,16 +140,29 @@ main {
   }
 }
 
-
 footer {
   background-color: $secondary-color;
-  color: white;
+  color: rgb(192, 170, 170);
   text-align: center;
   padding: 10px;
 
   ul.row {
     list-style-type: none;
     padding: 0;
+
+    @for $i from 1 through 6 { 
+      li.col-md-#{$i} {
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
 
     li.col-md-6 {
       a {
@@ -153,7 +174,7 @@ footer {
         }
       }
     }
-  }
+  
 
   ul.social-media-links.row {
     list-style-type: none;
@@ -167,4 +188,5 @@ footer {
       }
     }
   }
-}
+
+

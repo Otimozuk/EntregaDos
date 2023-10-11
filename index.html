@@ -16,33 +16,41 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./style.sass/style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 </head>
 
 <body>
-    <header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <img src="./img/640px-Cryptocurrency_Logo.svg.png" width="50" alt="logotipo" data-aos="fade-up">
+            <a class="navbar-brand" href="#">CRIPTO PRO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./pages/Compra.html">Compra cripto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/Vende.html">Vende cripto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/NFT.html">NFT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/Aprende.html">Informate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-md-2">
-                <img src="./img/640px-Cryptocurrency_Logo.svg.png" width="50" alt="Logo Cripto Pro">
             </div>
             <div class="col-md-10">
                 <h1>CRIPTO PRO</h1>
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="./pages/Compra.html">Compra cripto</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/Vende.html">Vende cripto</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/NFT.html">NFT</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/NFT.html">Informate</a></li>
-            </ul>
-        </div>
-    </nav>
+   
     <hr>
     <main class="container">
-        <section id="portada" class="p-4 m-4">
+        <section id="portada" class="p-4 m-4" data-aos="fade-up"></section>
             <h2 class="mb-3">PLATAFORMA LIDER MUNDIAL DE CRIPTOMONEDAS</h2>
             <h3 class="mb-4">Compra Bitcoin, Ethereum y todas tus criptomonedas favoritas.</h3>
             <article class="Cardeservicio p-3">
@@ -54,7 +62,7 @@
                 <button class="btn btn-primary mt-3">DESCARGA LA APP</button>
             </article>
         </section>
-        <center>
+        <center data-aos="zoom-in">
             <img class="principal img-fluid" width="800"
                 src="./img/conjunto-logotipos-criptomonedas-populares_69286-369.avif" alt="monedas">
         </center>
@@ -62,19 +70,19 @@
             <h2 class="mb-3">Your crypto journey starts here.</h2>
             <hr>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <article class="cardServicio p-3 mb-4">
                         <h3>Compra</h3>
                         <p>Opere con BTC, ETH y otras criptomonedas fácilmente mediante transferencia bancaria.</p>
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <article class="cardServicio p-3 mb-4">
                         <h3>Alertas</h3>
                         <p>Reciba notificaciones sobre los precios de BTC, ETH, XRP y más.</p>
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <article class="cardServicio p-3 mb-4">
                         <h3>Apuesta en cadena</h3>
                         <p>Genera ingresos pasivos ayudando para asegurar cadenas de bloques.</p>
@@ -82,27 +90,49 @@
                 </div>
             </div>
         </section>
-        <center>
+        <center data-aos="zoom-in">
             <img class="img-fluid" width="350" src="./img/buy-and-sell.webp" alt="ejemplo">
         </center>
     </main>
-    <footer class="container">
-        <ul class="row">
-            <li class="col-md-6"><a href="#">Política de privacidad</a></li>
-            <li class="col-md-6"><a href="#">Términos y condiciones</a></li>
-        </ul>
-        <ul class="social-media-links row">
-            <li class="col-md-4"><a href="www.facebook.com" target="_blank"><img width="50" src="./img/descarga.png"
-                        alt="Logo de Facebook"></a></li>
-            <li class="col-md-4"><a href="twitter.com/home" target="_blank"><img width="50"
-                        src="./img/Preview-image.png" alt="Logo de Twitter"></a></li>
-            <li class="col-md-4"><a href="https://www.instagram.com/" target="_blank"><img width="50"
-                        src="./img/Instagram_logo_2016.svg.webp" alt="logo instagram"></a></li>
-        </ul>
+    <footer class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline social-media-links">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="./img/descarga.png" width="50" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="./img/Preview-image.png" width="50" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./img/Instagram_logo_2016.svg.webp" width="50" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                AOS.init();
+            });
+        </script>
 </body>
 
 </html>

@@ -1,149 +1,168 @@
+@charset "UTF-8";
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
-
-@media screen and (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-
-  header img {
-    width: 30px;
-  }
-
-  nav ul li {
-    margin-right: 10px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  header {
-    padding: 10px;
-  }
-
-  header img {
-    width: 25px;
-  }
-
-  nav ul li {
-    margin-right: 5px;
-  }
+header {
+  background-color: #3498db;
+  background: linear-gradient(to bottom, #FF5733, #001aff);
+  color: white;
+  padding: 10px;
+}
+header .col-md-2 img {
+  width: 50px;
+}
+header .col-md-10 h1 {
+  font-size: 24px;
+  margin: 0;
 }
 
-nav ul {
-  list-style: none;
+.navbar {
+  background: linear-gradient(to bottom, #3498db, #e74c3c); /* Cambia los colores según tu preferencia */
 }
 
-nav ul li {
+nav ul.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul.navbar-nav li.nav-item {
   display: inline;
   margin-right: 20px;
 }
-
-nav ul li a {
+nav ul.navbar-nav li.nav-item a.nav-link {
   text-decoration: none;
-  color: #fff;
+  color: black;
+}
+nav ul.navbar-nav li.nav-item a.nav-link:hover {
+  text-decoration: underline;
 }
 
-
-main {
+main #portada {
   padding: 20px;
-  margin: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
-
-section {
-  padding: 20px;
-  margin: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+main #portada h2 {
+  font-size: 28px;
+  color: #3498db;
+  margin-bottom: 10px;
 }
-
-
-button {
-  display: block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+main #portada h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+main #portada .Cardeservicio ul.list-unstyled li {
+  margin-bottom: 10px;
+}
+main #portada .Cardeservicio button.btn {
+  background-color: #3498db;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
   cursor: pointer;
 }
-
-button:hover {
-  background-color: #b3009b;
+main center img.principal {
+  width: 800px;
+  max-width: 100%;
 }
-
-
-.Cardeservicio img,
-.cardServicio img {
-  float: left;
-  margin-right: 20px;
-}
-
-
-h2 {
+main h2 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
-
-h3 {
-  margin-bottom: 10px;
-}
-
-hr {
-  margin: 20px 0;
-  border: none;
+main hr {
   border-top: 1px solid #ccc;
+  margin: 20px 0;
 }
-
-
-footer a {
-  text-decoration: none;
-  color: #007bff;
+main .col-md-4 .cardServicio {
+  padding: 20px;
+  margin-bottom: 20px;
 }
-
-
-.social-media-links li {
-  display: inline;
-  margin-right: 10px;
+main .col-md-4 .cardServicio h3 {
+  font-size: 20px;
+}
+main .col-md-4 .cardServicio p {
+  font-size: 16px;
+}
+main center img.img-fluid {
+  width: 350px;
+  max-width: 100%;
 }
 
 footer {
-
-  background-color: #333;
-  color: #fff;
+  background-color: #ff1900;
+  color: rgb(192, 170, 170);
   text-align: center;
   padding: 10px;
 }
-
-
-footer nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+footer ul.row {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul.row li.col-md-1 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-1 a:hover {
+  text-decoration: underline;
+}
+footer ul.row li.col-md-2 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-2 a:hover {
+  text-decoration: underline;
+}
+footer ul.row li.col-md-3 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-3 a:hover {
+  text-decoration: underline;
+}
+footer ul.row li.col-md-4 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-4 a:hover {
+  text-decoration: underline;
+}
+footer ul.row li.col-md-5 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-5 a:hover {
+  text-decoration: underline;
+}
+footer ul.row li.col-md-6 a {
+  text-decoration: none;
+  color: white;
+}
+footer ul.row li.col-md-6 a:hover {
+  text-decoration: underline;
 }
 
-footer nav ul li {
-  margin: 0 10px;
+li.col-md-6 a {
+  text-decoration: none;
+  color: white;
+}
+li.col-md-6 a:hover {
+  text-decoration: underline;
 }
 
-
-footer ul ul {
-  display: flex;
-  list-style: none;
+ul.social-media-links.row {
+  list-style-type: none;
+  padding: 0;
+}
+ul.social-media-links.row li.col-md-4 a img {
+  width: 50px;
 }
 
-footer ul ul li {
-  margin: 0 10px;
-}
-
-
-footer img {
-  width: 30px;
-}
+/*# sourceMappingURL=style.css.map */
